@@ -1,0 +1,20 @@
+Shorting duplicate num from a array without shorting function
+*************************************************************
+
+<?php  
+$a = array(1,1,2,2,3,3,3,4,4,4);
+$count = count($a);
+
+$b = [];
+
+for($i=0; $i<$count; $i++){
+    if(!in_array($a[$i], $b)){
+        array_push($b, $a[$i]);
+    }
+}
+
+dd($b);  
+
+?>
+
+************************************************************
